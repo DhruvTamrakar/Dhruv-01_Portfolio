@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
         startTerminalTyping();
 
 
-    }, 1500);
+    }, 500);
 });
 
 
@@ -110,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function animateProgressBars() {
         if (hasAnimatedOnThisPass) return;
 
-        console.log('Animating progress bars on downward scroll...');
         hasAnimatedOnThisPass = true;
 
         progressBars.forEach((progressBar, index) => {

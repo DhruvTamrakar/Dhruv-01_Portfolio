@@ -14,6 +14,18 @@
 button {
     transition: all 0.5s ease;
 }
+/* #hero,
+#about,
+#skills,
+#project,
+#developer,
+#contact,
+.projects-container,
+.project-card {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+} */
 
 :root {
     --liner-text-color: linear-gradient(to right, var(--border-color),var(--hover-text-color));
@@ -66,7 +78,7 @@ body {
     z-index: -1;
     object-fit: cover;
     filter: contrast(1.5);
-
+    overflow-x: hidden;
 }
 
 .gotop {
@@ -297,7 +309,7 @@ background-clip: text;
     text-align: center;
     margin: 20px;
 }
-
+/*  */
 #developer>.social {
     display: flex;
     justify-content: center;
@@ -397,7 +409,7 @@ background-clip: text;
 
 .box1>.col2>.child {
     padding: 20px;
-    max-width: 35%;
+    max-width: unset;
     min-width: 35%;
     display: flex;
     flex-direction: column;
@@ -413,7 +425,7 @@ background-clip: text;
     scale: 1.1;
 }
 
-#about>.box2 {
+#about .box2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -421,7 +433,7 @@ background-clip: text;
     gap: 40px;
 }
 
-#about>.box2>.col {
+#about .box2>.col {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -434,12 +446,12 @@ background-clip: text;
     background-color: var(--transparent-color);
 }
 
-#about>.box2>.col>h2 {
+#about .box2>.col>h2 {
     padding: 10px 20px;
     color: var(--hover-text-color);
 }
 
-#about>.box2>.col>div {
+#about .box2>.col>div {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -447,7 +459,7 @@ background-clip: text;
     flex-wrap: wrap;
 }
 
-#about>.box2>.col p {
+#about .box2>.col p {
     display: inline-block;
     padding: 10px 20px;
     width: max-content;
@@ -457,7 +469,7 @@ background-clip: text;
     border: 1px solid var(--border-color);
 }
 
-#about>.box2>.col p:hover {
+#about .box2>.col p:hover {
      box-shadow: 0 0 5px var(--hover-text-color);
     color: black;
      transform: translateY(-3px) translateX(10px) scale(1.02);
@@ -970,6 +982,9 @@ footer i:hover {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
+  .project-header .project-title {
+    white-space: nowrap;
+  }
 
     .project>img {
         height: 200px;
@@ -1033,6 +1048,14 @@ footer i:hover {
 }
 /* For Phone */
 @media (max-width: 768px) {
+    /* #hero,
+#developer,
+#about,
+#skills,
+#project,
+#contact {
+    width: 100%;
+} */
     header {
         width: 95%;
         padding: 12px 20px;
@@ -1062,7 +1085,7 @@ footer i:hover {
     }
 
     #hero {
-        width: 90vw;
+        width: 90%;
         margin: 15px auto;
         padding: 15px;
     }
@@ -1073,7 +1096,7 @@ footer i:hover {
     }
 
     #developer {
-        width: 90vw;
+        width: 90%;
     }
 
     #developer>.social {
@@ -1087,22 +1110,15 @@ footer i:hover {
     }
 
     #about {
-        width: 90vw;
+        width: 90%;
         grid-template-columns: 1fr;
     }
-
-    .box1>.col2 {
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .box1>.col2>.child {
-        max-width: 100%;
+    #about .box1 .col2> .child{
         min-width: 100%;
-    }
 
+    }
     #skills {
-        width: 90vw;
+        width: 90%;
         flex-direction: column;
     }
 
@@ -1111,7 +1127,7 @@ footer i:hover {
     }
 
     #project {
-        width: 90vw;
+        width: 100%;
         grid-template-columns: 1fr;
         gap: 25px;
     }
@@ -1121,7 +1137,7 @@ footer i:hover {
     }
 
     #contact {
-        width: 90vw;
+        width: 90%;
     }
 
     .cform>.field {
@@ -1141,13 +1157,12 @@ footer i:hover {
     .label>img {
         width: 60px;
     }
-    #project,
   .projects-container {
-    width: 100vw;
+    width: auto;
   }
 
   .project-card {
-    width: 100%;
+    width: 95%;
     padding: 14px;
     gap: 15px;
   }
