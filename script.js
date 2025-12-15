@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
         startTerminalTyping();
 
 
-    }, 500);
+    }, 2500);
 });
 
 
@@ -337,7 +337,7 @@ form.addEventListener("submit", function (e) {
 
     if (isNameValid && isEmailValid && isMessageValid) {
         sendEmail();
-         e.preventDefault(); // stop submit if invalid
+        e.preventDefault(); // stop submit if invalid
         document.querySelectorAll(".valid").forEach(el => el.classList.remove("valid"));
     }
 });
@@ -351,13 +351,13 @@ function sendEmail() {
         email: emailInput.value,
         message: messageInput.value
     })
-    .then(() => {
-        alert("Message sent successfully ✅");
-        form.reset();
-    })
-    .catch(() => {
-        alert("Failed to send message ❌");
-    });
+        .then(() => {
+            alert("Message sent successfully ✅");
+            form.reset();
+        })
+        .catch(() => {
+            alert("Failed to send message ❌");
+        });
 }
 
 
