@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhruv Tamrakar - Full-Stack Developer</title>
-    <link rel="shortcut icon" href="./Assets/1753702096691.webp" type="image/x-icon">
+    <title>Dhruv Tamrakar - .Net Full Stack Developer</title>
+    <link rel="shortcut icon" href="./Assets/1753702096691.webp" type="image/x-icon" >
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body id="body">
+    <div class="cover" id="cover"></div>
     <video id="bg-video" autoplay muted loop playsinline>
         <source src="./Assets/bg-video.mp4" type="video/mp4">
     </video>
 
     <!-- //Header -->
-    <header id="head">
-        <div class="logo">&lt; D/T &gt;</div>
+    <header id="header">
+        <div class="logo" id="logo">&lt; D/T &gt;</div>
         <nav>
             <ul class="menu">
                 <li><a href="#hero">Home</a></li>
@@ -60,7 +61,11 @@
 
         </section>
 
-        <h1 id="section-title">&lt;Developer/&gt;</h1>
+        <h1 id="section-title" class="door-title ection-title">
+            <span class="door left">&lt;</span>
+            <span class="text">Developer</span>
+            <span class="door right">/&gt;</span>
+        </h1>
         <section id="developer">
             <h3>Crafting digital experiences with cutting-edge technology</h3>
             <div class="social">
@@ -82,48 +87,56 @@
             </div>
         </section>
 
-        <h1 id="section-title">&lt;About/&gt;</h1>
+        <h1 id="section-title" class="door-title section-title">
+            <span class="door left">&lt;</span>
+            <span class="text">About</span>
+            <span class="door right">/&gt;</span>
+        </h1>
         <section id="about">
-            <div class="box box1">
-                <div class="col col1">
-                    <div class="label">
-                        <img src="./Assets/1753702096691.webp" alt="">
-                        <div>
-                            <h2>Full Stack Developer</h2>
-                            <h3>Creative & Innovator</h3>
+            <div data-aos="fade-right">
+                <div class="box box1">
+                    <div class="col col1">
+                        <div class="label">
+                            <img src="./Assets/1753702096691.webp" alt="" width="100px">
+                            <div>
+                                <h2>Full Stack Developer</h2>
+                                <h3>Creative & Innovator</h3>
+                            </div>
                         </div>
+                        <p>Full-stack .NET developer skilled in building end-to-end web applications. Proficient in
+                            developing robust back-end services with creating dynamic, responsive interfaces using
+                            React,
+                            JavaScript, and Bootstrap. Demonstrated ability to transform concepts into fully-functional
+                            applications. And a quick learner with strong problem-solving skills, ready to contribute to
+                            a team
+                            and grow as a professional developer.</p>
                     </div>
-                    <p>Full-stack .NET developer skilled in building end-to-end web applications. Proficient in
-                        developing robust back-end services with creating dynamic, responsive interfaces using React,
-                        JavaScript, and Bootstrap. Demonstrated ability to transform concepts into fully-functional
-                        applications. And a quick learner with strong problem-solving skills, ready to contribute to a team
-                        and grow as a professional developer.</p>
-                </div>
-                <div class="col col2">
-                    <div class="child child1">
-                        <img src="./Assets/image.png" alt="">
-                        <h2>2+ Years</h2>
-                        <p>Experience</p>
-                    </div>
-                    <div class="child child2">
-                        <img src="./Assets/image2.jpg" alt="">
-                        <h2>10+</h2>
-                        <p>Projects</p>
-                    </div>
-                    <div class="child child3">
-                        <img src="./Assets/image3.jpg" alt="">
-                        <h2>Team</h2>
-                        <p>Leadership</p>
-                    </div>
-                    <div class="child child4">
-                        <img src="./Assets/image4.jpg" alt="">
-                        <h2>Tech</h2>
-                        <p>Innovation</p>
-                    </div>
+                    <div class="col col2">
+                        <div class="child child1">
+                            <img src="./Assets/image.png" alt="">
+                            <h2>2+ Years</h2>
+                            <p>Experience</p>
+                        </div>
+                        <div class="child child2">
+                            <img src="./Assets/image2.jpg" alt="">
+                            <h2>10+</h2>
+                            <p>Projects</p>
+                        </div>
+                        <div class="child child3">
+                            <img src="./Assets/image3.jpg" alt="">
+                            <h2>Team</h2>
+                            <p>Leadership</p>
+                        </div>
+                        <div class="child child4">
+                            <img src="./Assets/image4.jpg" alt="">
+                            <h2>Tech</h2>
+                            <p>Innovation</p>
+                        </div>
 
+                    </div>
                 </div>
             </div>
-            <div class="box box2">
+            <div class="box box2" data-aos="fade-left">
                 <div class="col col1">
                     <h2>Current Focus</h2>
                     <div>
@@ -151,177 +164,433 @@
             </div>
         </section>
 
-        <h2 id="section-title">&lt;Skills.&gt;</h2>
+        <h1 id="section-title" class="door-title section-title">
+            <span class="door left">&lt;</span>
+            <span class="text">Skills</span>
+            <span class="door right">/&gt;</span>
+        </h1>
         <section id="skills">
-            <div class="skills-category frontend-skills">
+            <div data-aos="fade-up">
+                <div class="skills-category frontend-skills">
 
-                <h2><span class="span1"><i class="fa-solid fa-globe"></i></span>Frontend Skills</h2>
-                <div class="skill">
-                    <div>
-                        <h3>HTML -&gt;</h3>
-                        <h3>99%</h3>
+                    <h2><span class="span1"><i class="fa-solid fa-globe"></i></span>Frontend Skills</h2>
+                    <div class="skill">
+                        <div>
+                            <h3>HTML -&gt;</h3>
+                            <h3>99%</h3>
+                        </div>
+                        <progress max="100" value="99"></progress>
                     </div>
-                    <progress max="100" value="99"></progress>
-                </div>
-                <div class="skill">
-                    <div>
-                        <h3>CSS -&gt;</h3>
-                        <h3>100%</h3>
+                    <div class="skill">
+                        <div>
+                            <h3>CSS -&gt;</h3>
+                            <h3>99%</h3>
+                        </div>
+                        <progress max="100" value="99"></progress>
                     </div>
-                    <progress max="100" value="100"></progress>
-                </div>
-                <div class="skill">
-                    <div>
-                        <h3>JavaScript -&gt;</h3>
-                        <h3>80%</h3>
+                    <div class="skill">
+                        <div>
+                            <h3>JavaScript -&gt;</h3>
+                            <h3>80%</h3>
+                        </div>
+                        <progress max="100" value="80"></progress>
                     </div>
-                    <progress max="100" value="80"></progress>
-                </div>
-                <div class="skill">
-                    <div>
-                        <h3>React -&gt;</h3>
-                        <h3>80%</h3>
+                    <div class="skill">
+                        <div>
+                            <h3>React -&gt;</h3>
+                            <h3>80%</h3>
+                        </div>
+                        <progress max="100" value="80"></progress>
                     </div>
-                    <progress max="100" value="80"></progress>
                 </div>
             </div>
-
-            <div class="skills-category backend-skills">
-                <h2><span class="span2"><i class="fa-solid fa-server"></i></span>Backend Skills</h2>
-                <div class="skill">
-                    <div>
-                        <h3>C# -&gt;</h3>
-                        <h3>90%</h3>
+            <div data-aos="fade-up">
+                <div class="skills-category backend-skills">
+                    <h2><span class="span2"><i class="fa-solid fa-server"></i></span>Backend Skills</h2>
+                    <div class="skill">
+                        <div>
+                            <h3>C# -&gt;</h3>
+                            <h3>90%</h3>
+                        </div>
+                        <progress max="100" value="90"></progress>
                     </div>
-                    <progress max="100" value="90"></progress>
-                </div>
-                <div class="skill">
-                    <div>
-                        <h3>.NET Core -&gt;</h3>
-                        <h3>85%</h3>
+                    <div class="skill">
+                        <div>
+                            <h3>.NET Core -&gt;</h3>
+                            <h3>85%</h3>
+                        </div>
+                        <progress max="100" value="85"></progress>
                     </div>
-                    <progress max="100" value="85"></progress>
-                </div>
-                <div class="skill">
-                    <div>
-                        <h3>ASP.NET -&gt;</h3>
-                        <h3>90%</h3>
+                    <div class="skill">
+                        <div>
+                            <h3>ASP.NET Core -&gt;</h3>
+                            <h3>90%</h3>
+                        </div>
+                        <progress max="100" value="90"></progress>
                     </div>
-                    <progress max="100" value="90"></progress>
-                </div>
-                <div class="skill">
-                    <div>
-                        <h3>ASP.NET MVC -&gt;</h3>
-                        <h3>75%</h3>
+                    <div class="skill">
+                        <div>
+                            <h3>ASP.NET MVC -&gt;</h3>
+                            <h3>75%</h3>
+                        </div>
+                        <progress max="100" value="75"></progress>
                     </div>
-                    <progress max="100" value="75"></progress>
-                </div>
-                <div class="skill">
-                    <div>
-                        <h3>ADO.NET -&gt;</h3>
-                        <h3>90%</h3>
+                    <div class="skill">
+                        <div>
+                            <h3>ADO.NET -&gt;</h3>
+                            <h3>90%</h3>
+                        </div>
+                        <progress max="100" value="90"></progress>
                     </div>
-                    <progress max="100" value="90"></progress>
                 </div>
             </div>
-
-            <div class="skills-category tools">
-                <h2><span class="span3"><i class="fa-solid fa-code"></i></span>Tools</h2>
-                <div class="skill">
-                    <div>
-                        <h3>GitHub -&gt;</h3>
-                        <h3>60%</h3>
+            <div data-aos="fade-up">
+                <div class="skills-category tools">
+                    <h2><span class="span3"><i class="fa-solid fa-code"></i></span>Tools</h2>
+                    <div class="skill">
+                        <div>
+                            <h3>GitHub -&gt;</h3>
+                            <h3>85%</h3>
+                        </div>
+                        <progress max="100" value="85"></progress>
                     </div>
-                    <progress max="100" value="60"></progress>
-                </div>
-                <div class="skill">
-                    <div>
-                        <h3>Visual Studio -&gt;</h3>
-                        <h3>90%</h3>
+                    <div class="skill">
+                        <div>
+                            <h3>Visual Studio -&gt;</h3>
+                            <h3>90%</h3>
+                        </div>
+                        <progress max="100" value="90"></progress>
                     </div>
-                    <progress max="100" value="90"></progress>
-                </div>
-                <div class="skill">
-                    <div>
-                        <h3>VS Code -&gt;</h3>
-                        <h3>80%</h3>
+                    <div class="skill">
+                        <div>
+                            <h3>VS Code -&gt;</h3>
+                            <h3>80%</h3>
+                        </div>
+                        <progress max="100" value="80"></progress>
                     </div>
-                    <progress max="100" value="80"></progress>
+                    <div class="skill">
+                        <div>
+                            <h3>SQL Server -&gt;</h3>
+                            <h3>80%</h3>
+                        </div>
+                        <progress max="100" value="80"></progress>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <h2 id="section-title">&lt;Projects/&gt;</h2>
+        <h1 id="section-title" class="door-title section-title">
+            <span class="door left">&lt;</span>
+            <span class="text">Projects</span>
+            <span class="door right">/&gt;</span>
+        </h1>
         <section id="project">
-            <div class="project">
-                <img src="./Assets/undraw_loading-ui_egb4.svg" alt="">
-                <h2>Project:</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas excepturi, laudantium optio velit
-                    dignissimos sint eligendi iusto accusantium aliquam animi.</p>
-                <button>Live Preview</button>
-            </div>
-            <div class="project">
-                <img src="./Assets/undraw_loading-ui_egb4.svg" alt="">
-                <h2>Project:</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas excepturi, laudantium optio velit
-                    dignissimos sint eligendi iusto accusantium aliquam animi.</p>
-                <button>Live Preview</button>
-            </div>
-            <div class="project">
-                <img src="./Assets/undraw_loading-ui_egb4.svg" alt="">
-                <h2>Project:</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas excepturi, laudantium optio velit
-                    dignissimos sint eligendi iusto accusantium aliquam animi.</p>
-                <button>Live Preview</button>
-            </div>
-            <div class="project">
-                <img src="./Assets/undraw_loading-ui_egb4.svg" alt="">
-                <h2>Project:</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas excepturi, laudantium optio velit
-                    dignissimos sint eligendi iusto accusantium aliquam animi.</p>
-                <button>Live Preview</button>
-            </div>
-            <div class="project">
-                <img src="./Assets/undraw_loading-ui_egb4.svg" alt="">
-                <h2>Project:</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas excepturi, laudantium optio velit
-                    dignissimos sint eligendi iusto accusantium aliquam animi.</p>
-                <button>Live Preview</button>
-            </div>
-            <div class="project">
-                <img src="./Assets/undraw_loading-ui_egb4.svg" alt="">
-                <h2>Project:</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas excepturi, laudantium optio velit
-                    dignissimos sint eligendi iusto accusantium aliquam animi.</p>
-                <button>Live Preview</button>
+
+            <div class="projects-container">
+
+                <!-- Golden Restaurant Billing System -->
+                <div class="project-card">
+                    <div class="project-header restaurant-header">
+                        <div>
+                            <i class="fas fa-utensils"></i>
+                            <h3 class="project-title "> Golden Restaurant System</h3>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">ASP.NET Web API</span>
+                            <span class="tech-tag">ADO.NET</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="project-body">
+
+                        <div class="project-description">
+                            <h4 class="description-title">
+                                <i class="fas fa-info-circle"></i>
+                                Project Overview
+                            </h4>
+                            <p class="overview-text">A full-stack restaurant management system with real-time
+                                billing capabilities.</p>
+
+                            <div class="project-architecture">
+                                <h5 class="architecture-title">
+                                    <i class="fas fa-layer-group"></i>
+                                    Architecture
+                                </h5>
+                                <ul class="architecture-list">
+                                    <li class="architecture-item">
+                                        <i class="fas fa-angle-right"></i>
+                                        <span class="architecture-label">Frontend:</span> React with Bootstrap
+                                        for responsive UI
+                                    </li>
+                                    <li class="architecture-item">
+                                        <i class="fas fa-angle-right"></i>
+                                        <span class="architecture-label">Backend:</span> ASP.NET Web API
+                                    </li>
+                                    <li class="architecture-item">
+                                        <i class="fas fa-angle-right"></i>
+                                        <span class="architecture-label">Database:</span> SQL Server with
+                                        ADO.NET connectivity
+                                    </li>
+                                    <li class="architecture-item">
+                                        <i class="fas fa-angle-right"></i>
+                                        <span class="architecture-label">API Integration:</span> RESTful APIs
+                                        for all operations
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="project-features">
+                                <h5 class="features-title">
+                                    <i class="fas fa-star"></i>
+                                    Key Features
+                                </h5>
+                                <ul class="features-list">
+                                    <li class="feature-item"><i class="fas fa-angle-right"></i> Dynamic menu loading
+                                        from database</li>
+                                    <li class="feature-item"><i class="fas fa-angle-right"></i> Real-time bill
+                                        calculation and generation</li>
+                                    <li class="feature-item"><i class="fas fa-angle-right"></i> Order management system
+                                    </li>
+                                    <li class="feature-item"><i class="fas fa-angle-right"></i> Table reservation system
+                                    </li>
+                                    <li class="feature-item"><i class="fas fa-angle-right"></i> Customer management</li>
+                                    <li class="feature-item"><i class="fas fa-angle-right"></i> Inventory tracking</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-implementation">
+                                <h5 class="implementation-title">
+                                    <i class="fas fa-tasks"></i>
+                                    Implementation Details
+                                </h5>
+                                <ul class="implementation-list">
+                                    <li class="implementation-item"><i class="fas fa-angle-right"></i> Created RESTful
+                                        APIs for CRUD operations
+                                    </li>
+                                    <li class="implementation-item"><i class="fas fa-angle-right"></i> Used ADO.NET for
+                                        database connectivity</li>
+                                    <li class="implementation-item"><i class="fas fa-angle-right"></i> Implemented JWT
+                                        authentication</li>
+                                    <li class="implementation-item"><i class="fas fa-angle-right"></i> Consumed APIs in
+                                        React frontend</li>
+                                    <li class="implementation-item"><i class="fas fa-angle-right"></i> Menu items stored
+                                        and retrieved from SQL
+                                        Server</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-footer">
+
+                        <div class="project-links">
+                            <a href="https://github.com/DhruvTamrakar/Restaurant-Billing-System"
+                                class="link-btn code-link">
+                                <i class="fab fa-github"></i>
+                                <span class="link-text">View Code</span>
+                            </a>
+                            <a href="https://gold-restaurant.netlify.app/" class="link-btn demo-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span class="link-text">Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Management System -->
+                <div class="project-card">
+                    <div class="project-header bank-header">
+                        <div>
+                            <i class="fas fa-university"></i>
+                            <h3 class="project-title"> Bank Management System</h3>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">ASP.NET Core MVC</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">ADO.NET</span>
+                            <span class="tech-tag">Authentication</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Role-based Access</span>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-description">
+
+                            <h4 class="description-title">
+                                <i class="fas fa-info-circle"></i>
+                                Project Overview
+                            </h4>
+                            <p class="overview-text">A comprehensive banking system with role-based
+                                authentication and full banking operations.</p>
+
+                            <div class="admin-features">
+                                <h5 class="admin-title">
+                                    <i class="fas fa-user-shield"></i>
+                                    Admin/Owner Features
+                                </h5>
+                                <ul class="admin-features-list">
+                                    <li class="admin-feature-item"><i class="fas fa-angle-right"></i> Dashboard with
+                                        analytics and statistics
+                                    </li>
+                                    <li class="admin-feature-item"><i class="fas fa-angle-right"></i> View all customers
+                                        and their details</li>
+                                    <li class="admin-feature-item"><i class="fas fa-angle-right"></i> Add, Update, and
+                                        Delete customer accounts
+                                    </li>
+                                    <li class="admin-feature-item"><i class="fas fa-angle-right"></i> Monitor all
+                                        transactions</li>
+                                    <li class="admin-feature-item"><i class="fas fa-angle-right"></i> Generate financial
+                                        reports</li>
+                                    <li class="admin-feature-item"><i class="fas fa-angle-right"></i> Manage account
+                                        types and interest rates
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="customer-features">
+                                <h5 class="customer-title">
+                                    <i class="fas fa-user"></i>
+                                    Customer Features
+                                </h5>
+                                <ul class="customer-features-list">
+                                    <li class="customer-feature-item"><i class="fas fa-angle-right"></i> User
+                                        registration and authentication
+                                        system</li>
+                                    <li class="customer-feature-item"><i class="fas fa-angle-right"></i> Secure login
+                                        with password protection
+                                    </li>
+                                    <li class="customer-feature-item"><i class="fas fa-angle-right"></i> View and update
+                                        personal profile</li>
+                                    <li class="customer-feature-item"><i class="fas fa-angle-right"></i> Deposit and
+                                        withdraw money</li>
+                                    <li class="customer-feature-item"><i class="fas fa-angle-right"></i> View
+                                        transaction history</li>
+                                    <li class="customer-feature-item"><i class="fas fa-angle-right"></i> Check account
+                                        balance</li>
+                                    <li class="customer-feature-item"><i class="fas fa-angle-right"></i> Transfer money
+                                        between accounts</li>
+                                    <li class="customer-feature-item"><i class="fas fa-angle-right"></i> View account
+                                        statements</li>
+                                </ul>
+                            </div>
+
+                            <div class="technical-implementation">
+                                <h5 class="tech-implementation-title">
+                                    <i class="fas fa-cogs"></i>
+                                    Technical Implementation
+                                </h5>
+                                <ul class="tech-implementation-list">
+                                    <li class="tech-implementation-item"><i class="fas fa-angle-right"></i> Built with
+                                        ASP.NET Core MVC pattern
+                                    </li>
+                                    <li class="tech-implementation-item"><i class="fas fa-angle-right"></i> SQL Server
+                                        database for data storage
+                                    </li>
+                                    <li class="tech-implementation-item"><i class="fas fa-angle-right"></i> ADO.NET for
+                                        database operations</li>
+                                    <li class="tech-implementation-item"><i class="fas fa-angle-right"></i>
+                                        Session-based authentication system
+                                    </li>
+                                    <li class="tech-implementation-item"><i class="fas fa-angle-right"></i> Role-based
+                                        authorization
+                                        (Admin/Customer)</li>
+                                    <li class="tech-implementation-item"><i class="fas fa-angle-right"></i> Bootstrap
+                                        for responsive frontend</li>
+                                    <li class="tech-implementation-item"><i class="fas fa-angle-right"></i> Stored
+                                        procedures for complex queries
+                                    </li>
+                                    <li class="tech-implementation-item"><i class="fas fa-angle-right"></i> Transaction
+                                        management for financial
+                                        operations</li>
+                                </ul>
+                            </div>
+
+                            <div class="security-features">
+                                <h5 class="security-title">
+                                    <i class="fas fa-shield-alt"></i>
+                                    Security Features
+                                </h5>
+                                <ul class="security-list">
+                                    <li class="security-item"><i class="fas fa-angle-right"></i> Password hashing and
+                                        salting</li>
+                                    <li class="security-item"><i class="fas fa-angle-right"></i> Session management</li>
+                                    <li class="security-item"><i class="fas fa-angle-right"></i> Input validation and
+                                        sanitization</li>
+                                    <li class="security-item"><i class="fas fa-angle-right"></i> Role-based access
+                                        control</li>
+                                    <li class="security-item"><i class="fas fa-angle-right"></i> Transaction logging
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-footer">
+
+                        <div class="project-links">
+                            <a href="#" class="link-btn code-link">
+                                <i class="fab fa-github"></i>
+                                <span class="link-text">View Code</span>
+                            </a>
+                            <a href="#" class="link-btn demo-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span class="link-text">Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </section>
 
-        <h2 id="section-title">&lt;Contact/&gt;</h2>
+        <h1 id="section-title" class="door-title section-title">
+            <span class="door left">&lt;</span>
+            <span class="text">Contact</span>
+            <span class="door right">/&gt;</span>
+        </h1>
         <section id="contact">
-            <div class="cform">
+            <form class="cform" >
+
+                <input type="hidden" name="_subject" value="New Contact Message">
+                <input type="hidden" name="_captcha" value="false">
+
                 <div class="field field1">
-                    <label for="Name">
+                    <label for="name">
                         <h3>Name</h3>
                     </label>
-                    <input type="text" placeholder="Enter Your Name..">
+                    <input id="name" name="name" type="text" placeholder="Enter Your Name..">
+                    <small class="error"></small>
                 </div>
+
                 <div class="field field2">
-                    <label for="Name">
+                    <label for="email">
                         <h3>Email</h3>
                     </label>
-                    <input type="text" placeholder="Enter Your Email..">
+                    <input id="email" name="email" type="text" placeholder="Enter Your Email..">
+                    <small class="error"></small>
                 </div>
+
                 <div class="field field3">
-                    <label for="Name">
+                    <label for="message">
                         <h3>Message</h3>
                     </label>
-                    <textarea rows="4" type="text" placeholder="Enter Your Message.."></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter Your Message.."></textarea>
+                    <small class="error"></small>
                 </div>
-                <button>Send</button>
-            </div>
+
+                <button type="submit">Send</button>
+            </form>
         </section>
+
     </main>
 
     <footer>
@@ -339,6 +608,10 @@
         </div>
     </footer>
     <a href="#hero" class="gotop"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
