@@ -91,21 +91,22 @@ body {
     z-index: 50;
      background: var(--aqua-bg-color);
      transition: 0.2s;
+       box-shadow: 0 0 5px var(--hover-text-color);
+    background-image: linear-gradient(45deg, var(--border-color) 40%, var(--hover-text-color));
+
 }
 
 .gotop>i {
-    color: var(--border-color);
     font-size: larger;
     font-weight: bolder;
-}
-.gotop:hover i{
     color: black;
+
 }
+
 .gotop:hover {
-    box-shadow: 0 0 5px var(--hover-text-color);
+  
     scale: 1.1;
     color: black;
-    background-image: linear-gradient(45deg, var(--border-color) 40%, var(--hover-text-color));
     transform: translateY(-10px);
 }
 
